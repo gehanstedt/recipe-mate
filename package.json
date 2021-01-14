@@ -1,5 +1,5 @@
 {
-  "name": "1-Passport-Example",
+  "name": "recipe-mate",
   "version": "1.0.0",
   "description": "Recipe Mate - a perfect cook's companion to store some favorite recipes.  This is part of Project #2 of the Georgia Tech Coding Bootcamp.",
   "main": "server.js",
