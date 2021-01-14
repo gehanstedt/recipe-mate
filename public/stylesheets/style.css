@@ -16,7 +16,7 @@ color: white;
    
 }
 
-.logintext{
+.logintext, .signuptext {
 color: white;
 }
 
