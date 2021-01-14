@@ -2,3 +2,141 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: arial
+}
+
+body {
+  background: #f3f5f9
+}
+
+.wrapper {
+  position: relative
+}
+
+.sidebar {              
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: #000000e0;
+  padding: 20px 0
+}
+
+.text-muted {
+  color: #adb5bd !important
+}
+
+ul {
+  padding-bottom: 20px
+}
+
+ul li a img {
+  background: #66BB6A;
+  top: 0;
+  border: none;
+  width: 20px
+}
+
+.sidebar ul li {
+  padding: 15px
+}
+
+.sidebar ul li a {
+  color: #fff;
+  display: block
+}
+
+.sidebar ul li a .fas {
+  width: 30px;
+  color: #bdb8d7 !important
+}
+
+i.fas.fa-home:hover,
+i.fas.fa-file-invoice:hover,
+i.fas.fa-video:hover,
+i.fas.fa-id-badge:hover,
+i.fas.fa-external-link-alt:hover,
+i.fas.fa-code:hover,
+i.far.fa-calendar-alt:hover,
+i.far.fa-credit-card:hover {
+  color: #304FFE !important
+}
+
+.sidebar ul li a .far {
+  width: 30px;
+  color: #bdb8d7 !important
+}
+
+.sidebar ul li:hover {
+  background: #000
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none
+}
+
+
+
+body,
+html {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.search {
+   margin-bottom: auto;
+   margin-top: auto;
+   height: 70px;
+   background-color: #fff;
+   border-radius: 40px;
+   padding: 10px
+   
+}
+
+.search_input {
+   color: white;
+   border: 0;
+   outline: 0;
+   background: none;
+   width: 0;
+   margin-top: 5px;
+   caret-color: transparent;
+   line-height: 40px;
+   transition: width 0.4s linear
+}
+
+.search .search_input {
+   padding: 0 10px;
+   width: 550px;
+   caret-color: red;
+   transition: width 0.4s linear
+   
+}
+
+.search:hover>.search_icon {
+   background: red;
+   color: #fff
+}
+
+.search_icon {
+   height: 50px;
+   width: 50px;
+   float: right;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   color: white;
+   background-color: black
+}
+
+a:link {
+   text-decoration: none
+}
