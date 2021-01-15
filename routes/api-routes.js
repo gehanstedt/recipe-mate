@@ -78,10 +78,10 @@ module.exports = function(app) {
   // PUT route to update the rating on a specific favorite
   // Parameters:
   //    id - ID of the favorite - from the body
-  //    rating - integer (0 - 5) that the rating should be
+  //    rating - integer (0 - 5) that the rating should be - from body
   // Returns:
   //     JSON object (dbPost)
-    app.put("/api/rating", function(req, res) {
+  app.put("/api/rating", function(req, res) {
     db.Favorite_recipe.update({
       rating: req.body.rating,
     }, {
