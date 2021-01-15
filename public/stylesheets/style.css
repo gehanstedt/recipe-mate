@@ -1,3 +1,4 @@
+
 .landing-page{
   background-image:url('../img/background.jpg');
 /* Set a specific height */
@@ -16,7 +17,7 @@ color: white;
    
 }
 
-.logintext{
+.logintext, .signuptext {
 color: white;
 }
 
@@ -890,7 +891,8 @@ nav.vertical-nav {
 /* Recipe Search */
 
 body{
-    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Permanent Marker', cursive;
   }
 
 .search {
@@ -1029,7 +1031,8 @@ hr { margin:1px}
 }
 
 #logo {
-  font-family: 'Special Elite', cursive;
+  /* font-family: 'Special Elite', cursive; */
+  font-family: 'Permanent Marker', cursive;
   font-size: 42px;
 }
 
@@ -1260,6 +1263,13 @@ section.testimonials {
     padding-left: 0;
     line-height: 1.7;
 
+}
+
+#myFooter h1{
+  font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 #myFooter h5{
