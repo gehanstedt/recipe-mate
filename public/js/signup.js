@@ -1,42 +1,72 @@
 $(document).ready(function() {
   // Getting references to our form and input
-  var signUpForm = $("form.signup");
-  var emailInput = $("input#email-input");
-  var passwordInput = $("input#password-input");
-
-  // When the signup button is clicked, we validate the email and password are not blank
-  signUpForm.on("submit", function(event) {
+  $("#register-button").on("click", function(event) {
     event.preventDefault();
     var userData = {
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
+      full_name: $("#name-input").val().trim(),
+      email: $("#email-input").val().trim(),
+      password: $("#password-input").val().trim()
     };
-
-    if (!userData.email || !userData.password) {
-      return;
-    }
-    // If we have an email and password, run the signUpUser function
-    signUpUser(userData.email, userData.password);
-    emailInput.val("");
-    passwordInput.val("");
-  });
-
-  // Does a post to the signup route. If successful, we are redirected to the members page
-  // Otherwise we log any errors
-  function signUpUser(email, password) {
-    $.post("/api/signup", {
-      email: email,
-      password: password
-    })
+    console.log(userData);
+    $.post("/api/signup", userData)
       .then(function(data) {
-        window.location.replace("/members");
-        // If there's an error, handle it by throwing up a bootstrap alert
-      })
-      .catch(handleLoginErr);
-  }
-
-  function handleLoginErr(err) {
-    $("#alert .msg").text(err.responseJSON);
-    $("#alert").fadeIn(500);
-  }
+        console.log("homepage.html", data);
+        alert("Adding user...");
+      });
+  });
 });
+
+
+// $(document).ready(function() {
+//   // Getting references to our form and input
+
+//   // When the signup button is clicked, we validate the email and password are not blank
+//   $("#register-button").on("click", function(event){
+//   // signUpForm.onclick("#register", function(event) {
+
+//     console.log("#name-input");
+//     console.log("#email-input");
+//     console.log("#password-input");
+//     console.log("#password-input2");
+  
+
+//     event.preventDefault();
+//     var userData = {
+//       name: $("#name-input").val().trim(),
+//       email: $("#email-input").val().trim(),
+//       password: $("#password-input").val().trim()
+//     };
+
+//       console.log(userData);
+
+//     if (!userData.email || !userData.password) {
+//       return;
+//     }
+//     // If we have an email and password, run the signUpUser function
+//     signUpUser(userData.name, userData.email, userData.password);
+//     // $("#name-input").val("");
+//     // "#email-input"
+//     // "#password-input"
+//     // emailInput.val("");
+//     // passwordInput.val("");
+//   });
+
+
+//   function signUpUser(name, email, password) {
+//     $.post("/api/signup", {
+//       full_name: name,
+//       email: email,
+//       password: password
+//     })
+//       .then(function(data) {
+//         window.location.replace("/members");
+//         // If there's an error, handle it by throwing up a bootstrap alert
+//       })
+//       .catch(handleLoginErr);
+//   }
+
+//   function handleLoginErr(err) {
+//     $("#alert.msg").text(err.responseJSON);
+//     $("#alert").fadeIn(500);
+//   }
+// });

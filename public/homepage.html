@@ -123,11 +123,15 @@
 			</div>
 			<div class="register-show">
                 <h2>REGISTER</h2>
-                <input type="text" placeholder="Full Name">
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="password" placeholder="Confirm Password">
-				<input type="button" value="Register">
+                <input type="text" id="name-input" placeholder="Full Name">
+				<input type="text" id="email-input"  placeholder="Email">
+				<input type="password" id="password-input" placeholder="Password">
+                <input type="password" id="password-input2" placeholder="Confirm Password">
+                <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> <span class="msg"></span>
+                  </div>
+				<input type="button" id="register-button" value="Register">
 			</div>
 		</div>
 	</div>
@@ -203,5 +207,6 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
 </body>
 </html>
