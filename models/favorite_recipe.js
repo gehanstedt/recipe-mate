@@ -18,8 +18,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(500),
       allowNull: false
     },
-    description: {
+    image_url: {
       type: DataTypes.STRING(500),
+      allowNull: true
+    },
+    rating: {
+      type: DataTypes.INTEGER,
       allowNull: true
     },
   });

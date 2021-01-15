@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       unique: true,
     },
     // The email cannot be null, and must be a proper email before creation
-    email_address: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
