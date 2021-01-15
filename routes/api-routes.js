@@ -1,6 +1,12 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+var request = require("request");
+
+//
+// We need to hide the API key
+// 
+const apiURL = "https://api.edamam.com/search?&app_id=424a8caa&app_key=8a5f2c782654123ddad8e6b7d7073ef1&q="
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -108,6 +114,53 @@ module.exports = function(app) {
     }).then(function(dbPost) {
       res.json(dbPost);
     });
+  });
+
+  // post route for getting the recipes
+  // GET route to return recipe object based on search criteria
+  // Parameters:
+  //    text - string containing comma separated list of search terms - from the body
+  // Returns:
+  //     JSON object containing recipe matches if successful, otherwise
+  //     returns "No Recipes Found" if not successful
+
+  app.get("/api/recipe", function(req, res) {
+
+    food = req.body.text 
+    ingredients = food.split(" ");
+    console.log(ingredients)
+    
+    // findAll returns all entries for a table when used with no options
+    const fetchRecipes = async (...ingredients) => {
+        // const mappedIngreds = ingredients
+        var mappedIngreds = ingredients
+          .map((ingredient, idx) => {
+            if (idx < ingredients.length - 1) {
+              return ingredient + "+";
+            } else {
+              return ingredient;
+            }
+          })
+          .join("");
+      
+        // const url = `${apiURL}${mappedIngreds}${apiKey}`;
+        const url = `${apiURL}${mappedIngreds}`;
+        console.log(url)
+
+        request(url, function (error, response, body) {
+            if (error) {console.log('error:', error);} // Print the error if one occurred
+            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+            if (JSON.parse(body).count === 0){
+                res.send("No Recipes Found");
+            }else{
+                res.send(JSON.parse(body).hits);
+            }
+        });
+
+      };
+      fetchRecipes(ingredients)
+    //   fetchRecipes("chicken", "steak", "pork");
+
   });
 };
 
