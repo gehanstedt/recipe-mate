@@ -1,54 +1,89 @@
-
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title> Recipe Mate</title>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+        <link rel="stylesheet" href="members.css"> 
+        </head>
+    <body oncontextmenu='return false' class='snippet-body'>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>recipe-mate</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="stylesheets/style.css" rel="stylesheet">
-</head>
-
-<body>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <div>
-    <nav class="navbar navbar-default navigation-clean headerContainer">
-        <div class="container ">
-            <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link" href="homepage.html">recipe-mate</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+            <div class="container-fluid"> <a class="navbar-brand" href="#">Recipe Mate</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false"> Tools </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Measurement Converter</a></li>
+                                <li><a class="dropdown-item" href="#">Shopping List</a></li>
+                                <li><a class="dropdown-item" href="#">Oven Timer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success" type="submit">Search</button> </form>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="/recipeSearch">FIND RECIPES</a></li>
-                    <li role="presentation"><a href="#howitworks">HOW IT WORKS</a></li>
-                    <li role="presentation"><a href="#login">LOGIN </a></li>
-                    <li role="presentation"><a id="signupBtn" href="#login">SIGN UP</a></li>
-                </ul>
+        </nav>
+
+        <div class="row d-flex justify-content-center mt-100">
+            <div class="col-md-4">
+                <form class="flex-nowrap col ml-auto footer-subscribe p-0"> <input type="text" class="form-control" placeholder="Search …"> <button type="submit" class="btn btn-theme bg-orange"><i class="fa fa-search p-0"></i></button> </form>
             </div>
         </div>
-    </nav>
-</div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
-      </div>
+<!--
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+        <div class="search"> <input class="search_input" type="text" name="" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
     </div>
-  </div>
+</div>
+-->
+<div class="container mt-100 search-results">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Milk Steak</h4>
+                    <p class="text-muted">Served with Raw Jelly Beans</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/04/spaghetti-policy.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Pocket Spaghetti</h4>
+                    <p class="text-muted">What's your spaghetti policy?</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://www.itsalways.com/wp-content/uploads/2017/06/Frank-Rum-Ham.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Rum Ham</h4>
+                    <p class="text-muted">This is ham soaked in rum, it's loaded with booze</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
-
-</body>
-
+    </body>
 </html>
