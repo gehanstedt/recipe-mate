@@ -4,17 +4,25 @@ $(document).ready(function() {
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
 
+  // 
+  // 				<input type="text" placeholder="Email" id="email-login-input">
+	//			<input type="password" placeholder="Password" id="password-login-input">
+	//			<input type="button" value="Login" id="login-button">
+
   // When the form is submitted, we validate there's an email and password entered
-  loginForm.on("submit", function(event) {
+  $("#login-button").on("click", function(event) {
     event.preventDefault();
+    console.log ("I'm here.");
     var userData = {
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
+      email: $("#email-login-input").val().trim(),
+      password: $("#password-login-input").val().trim()
     };
 
     if (!userData.email || !userData.password) {
       return;
     }
+
+    console.log (userData);
 
     // If we have an email and password we run the loginUser function and clear the form
     loginUser(userData.email, userData.password);
