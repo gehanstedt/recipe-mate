@@ -169,17 +169,6 @@ a {
 
 
 
-
-.footer-subscribe input[type=text] {
-    border: 1px solid #ff3514;
-    border-radius: 55px;
-    font-size: 12px;
-    padding: 12px 40% 12px 20px;
-    background: transparent;
-    width: 98%;
-    box-shadow: none !important
-}
-
 .mt-100 {
     margin-top: 200px
 }
@@ -194,13 +183,6 @@ input[type=text] {
     -o-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out
-}
-
-.footer-subscribe .btn-theme {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    right: 0
 }
 
 .btn-theme:hover {
