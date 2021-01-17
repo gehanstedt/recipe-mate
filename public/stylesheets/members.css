@@ -13,7 +13,7 @@ body,
      width: 100%;
      margin: 0;
      padding: 0;
-     background: #ffdfdf;
+     background: #f1eeee;
      font-family: 'Permanent Marker', cursive
 
  }
@@ -880,3 +880,17 @@ p {
 .search_icon{
 opacity: 0;}
 ;}
+
+.landing-img{
+  height: 50%;
+  width: auto;
+}
+
+.card-title{
+margin-top: 4%
+
+;}
+
+.card-results{
+  margin-top: 10%;
+}
