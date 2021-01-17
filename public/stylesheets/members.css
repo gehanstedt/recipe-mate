@@ -654,7 +654,6 @@ input[type=text] {
   .register-photo {
     background:#fff;
     padding:60px 0;
-    background:url(../../assets/img/prep.jpg) no-repeat center;
     background-size:cover;
     position: relative;
     border:none;
