@@ -112,7 +112,6 @@ color: white;
 
 .login-dark {
   height:802px;
-  background: url(../../assets/img/prep.jpg) no-repeat left;
   background-size:cover;
   border:none;
   background-attachment: fixed;
@@ -603,7 +602,6 @@ color: white;
 .register-photo {
   background:#fff;
   padding:60px 0;
-  background:url(../../assets/img/prep.jpg) no-repeat center;
   background-size:cover;
   position: relative;
   border:none;
@@ -719,7 +717,6 @@ color: white;
 /* Header */
 
 .hero {
-    background:url(../../assets/img/prep.jpg) no-repeat center;
     background-size:cover;
     position: relative;
     border:none;
@@ -1082,7 +1079,6 @@ hr { margin:1px}
 }
 
 #dashboardContainer{
-  background-image: url("/assets/img/prep.jpg");
   position: relative;
   background-size: cover;
   background-position: center center;
