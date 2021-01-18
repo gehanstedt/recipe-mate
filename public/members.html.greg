@@ -26,8 +26,14 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li role="presentation"><a href="">Home</a></li>
                         <li role="presentation"><a href="#search-bar">Find Recipes</a></li>
+<<<<<<< HEAD
+                        <!-- removed by Greg H li role="presentation"><a href="favorites.html">Favorites </a></li><-->
+                        <li role="presentation"><a href="/api/favorite/1">Favorites </a></li>
+                        <li role="presentation"><a href="">Tools </a></li>
+=======
                         <li role="presentation"><a href="favorites.html">Favorites </a></li>
                         <li role="presentation"><a href="cookingtools.html">Tools </a></li>
+>>>>>>> 88ea307069cf4ac19e62762ff5300f84a2fd70a8
                         <li role="presentation"><a href="contact.html">Contact </a></li>
                         <li role="presentation"><a href="/logout">Log Out</a></li>
                     </ul>
