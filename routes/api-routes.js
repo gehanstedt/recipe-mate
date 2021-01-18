@@ -3,6 +3,8 @@ var db = require("../models");
 var passport = require("../config/passport");
 var request = require("request");
 
+
+
 //
 // We need to hide the API key
 // 
@@ -105,6 +107,7 @@ module.exports = function(app) {
   //    user_id - ID of the user - from the body
   // Returns:
   //     JSON object (dbPost)
+/*
   app.get("/api/favorite", function(req, res) {
     console.log (req.body.user_id);
     db.Favorite_recipe.findAll({
@@ -115,6 +118,32 @@ module.exports = function(app) {
       res.json(dbPost);
     });
   });
+*/
+
+  app.get("/api/favorite/:id", function(req, res) {
+    console.log (`User ID passed in:  -->${req.params.id}<--`);
+    db.Favorite_recipe.findAll({
+      plain: false,
+      raw: true,
+      nest: true,
+      where: {
+        user_id: req.params.id
+      }
+    }).then(function(dbPost) {
+      var hbsObject = {
+        favorites: dbPost
+      };
+      console.log (`---------hbsObject object:-----`);
+      console.log (hbsObject);
+      console.log (`---------hbsObject object:-----`);
+      res.render("favorites", hbsObject);
+      // res.render("favorites", dbPost);
+      // res.json(hbsObject);
+    });
+  });
+
+
+
 
   // post route for getting the recipes
   // GET route to return recipe object based on search criteria
@@ -124,7 +153,7 @@ module.exports = function(app) {
   //     JSON object containing recipe matches if successful, otherwise
   //     returns "No Recipes Found" if not successful
 
-  app.get("/api/recipe", function(req, res) {
+  app.post("/api/recipe", function(req, res) {
 
     food = req.body.text 
     ingredients = food.split(" ");

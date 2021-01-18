@@ -1,0 +1,23 @@
+<h1>Make Sean Happy</h1>
+
+<h3>Favorites</h3>
+
+
+<ul>
+  {{#each favorites}}
+  	<li>
+  	   <p>ID: {{this.id}}</p>
+  	   <p>User ID: {{this.user_id}}</p>
+  	   <p>Title: {{this.title}}</p>
+  	   <p>URL</p>: {{this.url}}</p>
+  	   <p>Img URL</p>: {{this.image_url}}</p>
+       <p>Rating: {{this.rating}}</p>
+  	</li>
+  {{/each}}
+</ul>
+
+<form action="/" method="POST">
+	<textarea type="text" name="task"></textarea>
+
+	<button type="submit">Submit</button>
+</form>
