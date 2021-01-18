@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -33,25 +33,24 @@
           </div>
       </div>
     </nav>
-    <!-- Title -->
-    <div id="main" role="main">
-      <div class="row" style="padding-top:20px;">
-        <h2 class="offset-md-4 col-md-4"> Cooking Converter </h2>
+
+    <!-- Measurement Converter -->
+    <div id="main" role="main" class="">
+      <div class="" style="">
+        <h2 class="tools-title"> Cooking Converter </h2>
       </div>
-      <!-- Conversions -->
-      <div class="conversions">
+      <div class="">
         <form id="cu-form" class="form-group" style="padding-top:100px;">
-          <div class="row">
-            <div class="offset-md-3 col-md-4">
+          <div class="">
+            <div class=""">
               <input type="text" id="cu-input-1" class="form-control" value="1" oninput="changeAmount(event)" data-unit="cu-select-1" data-target="cu-input-2" data-target-select="cu-select-2" />
             </div>
             <div class="">
                 <select id="cu-select-1" class="js-cu-units form-control" data-input="cu-input-1" onchange="changeUnit(event)"></select>
             </div>
           </div>
-
-          <div class="row" style="padding-top:30px;">
-            <div class="offset-md-3 col-md-4">
+          <div class="" style="padding-top:30px;">
+            <div class="">
               <input type="text" id="cu-input-2" class="form-control" value="1" oninput="changeAmount(event)" data-unit="cu-select-2" data-target="cu-input-1" data-target-select="cu-select-1" />
             </div>
             <div class="">  
@@ -61,29 +60,30 @@
         </form>
       </div>
     </div>
+
     <!-- Temp Conversion -->
+    <div class="">
     <div class="temp-converter">
       <p>
-        <label>Fahrenheit</label>
         <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
         oninput="temperatureConverter(this.value)"
         onchange="temperatureConverter(this.value)">
       </p>
       <br>
-      <div class="temp-converter">
-      <p>Celsius: <span id="outputCelsius"></span></p>
+      <div class="">
+      <p class="temp-output">Celsius: <span id="outputCelsius"></span></p>
       </div>
     </div>
     <div class="temp-converter">
       <p>
-        <label>Celsius</label>
         <input id="inputCelsius" type="number" placeholder="Celsius"
         oninput="temperatureConverter2(this.value)"
         onchange="temperatureConverter2(this.value)">
       </p>
       <div class="temp-converter">
-      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+      <p class="temp-output">Fahrenheit: <span id="outputFahrenheit"></span></p>
       </div>
+    </div>
     </div>
 
 
@@ -92,12 +92,12 @@
 
 
 
+    <div class="tool-spacing"></div>
 
 
 
-
-
-    <h1><strong>Shopping List</strong></h1>
+<div class="shopping-list">
+    <h1 class="tools-title"><strong>Shopping List</strong></h1>
   <!-- Form to add items -->
   
   <form>
@@ -113,22 +113,22 @@
           </div>
       </ul>
   </div>
+</div>
 
 
 
 
+<div class="tool-spacing"></div>
 
-
-
-
-  <h1>Oven Timer</h1>
-  <h2>Don't burn your biscuits</h2>
+  <h1 class="tools-title timer-title">Oven Timer</h1>
+  <div class="shrink">
   <div id="container">
       <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
       <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-      <button id="start" class="btn">Start</button>
-      <button id="reset" class="btn">Reset</button>
+      <button id="start" class="btn timer-btn"><h6 class="timer-btn">Start</h6></button>
+      <button id="reset" class="btn timer-btn"><h6 class="timer-btn">Reset</h6></button>
   </div>
+</div>
 
 
 
