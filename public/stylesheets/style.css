@@ -1,14 +1,13 @@
-
 .landing-page{
-background-image:url('../img/background.jpg');
-/* Set a specific height */
-height: 650px;
-/* Parallax Effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-color: #ffdfdf;
+  background-image:url('../img/background.jpg');
+  /* Set a specific height */
+  height: 650px;
+  /* Parallax Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffdfdf;
 }
 
 .landingtext{
@@ -16,6 +15,7 @@ color: #ffdfdf;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px black;
 }
 
 .logintext, .signuptext {
@@ -1140,6 +1140,7 @@ section.testimonials {
 #myFooter {
   background-color: #373a48;
   color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #myFooter .footer-copyright{
