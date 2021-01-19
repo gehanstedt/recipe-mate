@@ -29,7 +29,7 @@ SCREENSHOTS
 ![Project 2 wire chart ](https://user-images.githubusercontent.com/71415601/105096058-8b9d9a80-5a74-11eb-8a9a-30a84e5e44e1.png)
 
 
-![landingimage](https://user-images.githubusercontent.com/71415601/105096699-7b39ef80-5a75-11eb-95fc-4d0b12c0ceed.png)
+![Capture2](https://user-images.githubusercontent.com/71415601/105106777-87797900-5a84-11eb-8f30-5be0ff19c20e.JPG)
 
 
 ![background](https://user-images.githubusercontent.com/71415601/105100258-079ae100-5a7b-11eb-8b4e-f5d1ca142237.jpg)
