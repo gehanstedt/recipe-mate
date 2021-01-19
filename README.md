@@ -1,8 +1,11 @@
 # recipe-mate
-Recipe Mate - a perfect cook's companion to store some favorite recipes.  This is part of Project #2 of the Georgia Tech Coding Bootcamp.
 
 Project Title
-Recipe-Mate 
+
+
+Recipe Mate - a perfect cook's companion to store some favorite recipes.  This is part of Project #2 of the Georgia Tech Coding Bootcamp.
+
+
 
 
 link to website: https://github.com/gehanstedt/recipe-mate
