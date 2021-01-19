@@ -1,23 +1,42 @@
-<h1>Make Sean Happy</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title> Recipe Mate</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    </head>
+		
 
-<h3>Favorites</h3>
-
-
-<ul>
-  {{#each favorites}}
-  	<li>
-  	   <p>ID: {{this.id}}</p>
-  	   <p>User ID: {{this.user_id}}</p>
-  	   <p>Title: {{this.title}}</p>
-  	   <p>URL</p>: {{this.url}}</p>
-  	   <p>Img URL</p>: {{this.image_url}}</p>
-       <p>Rating: {{this.rating}}</p>
-  	</li>
-  {{/each}}
-</ul>
-
-<form action="/" method="POST">
-	<textarea type="text" name="task"></textarea>
-
-	<button type="submit">Submit</button>
-</form>
+	<div class="container mt-100 card-results">
+		<div class="row">
+			{{#each favorites}}
+			<div class="col-md-4 col-sm-6">
+				<div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
+						<div class="inner">
+							{{!-- <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div> --}}
+							<div class="main-img"><img src="{{this.image_url}}" alt="Category"></div>
+						</div>
+					</a>
+					<div class="card-body text-center">
+						<h4 class="card-title">{{this.title}}</h4>
+						{{!-- <p class="text-muted">Served with Raw Jelly Beans</p> --}}
+						<h4 class="star-title">Star rating </h4>
+						<div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+						</div>
+						<button type="button" class="btn btn-danger">Delete</button>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	

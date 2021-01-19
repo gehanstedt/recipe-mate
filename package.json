@@ -30,5 +30,6 @@
   "bugs": {
     "url": "https://github.com/gehanstedt/recipe-mate/issues"
   },
-  "homepage": "https://github.com/gehanstedt/recipe-mate#readme"
+  "homepage": "https://github.com/gehanstedt/recipe-mate#readme",
+  "devDependencies": {}
 }
