@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title> Recipe Mate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+    <link rel="stylesheet" href="stylesheets/cookingtools.css"> 
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navigation-clean headerContainer">
+      <div class="container ">
+          <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link" href="homepage.html">recipe-mate</a>
+              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li role="presentation"><a href="members.html">Home</a></li>
+                  <li role="presentation"><a href="members.html">Find Recipes</a></li>
+                  <li role="presentation"><a href="favorites.html">Favorites </a></li>
+                  <li role="presentation"><a href="cookingtools.html">Tools </a></li>
+                  <li role="presentation"><a href="contact.html">Contact </a></li>
+                  <li role="presentation"><a href="">Log Out</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Measurement Converter -->
+    <div id="main" role="main" class="">
+      <div class="" style="">
+        <h2 class="tools-title"> Cooking Converter </h2>
+      </div>
+      <div class="">
+        <form id="cu-form" class="form-group" style="padding-top:100px;">
+          <div class="">
+            <div class=""">
+              <input type="text" id="cu-input-1" class="form-control" value="1" oninput="changeAmount(event)" data-unit="cu-select-1" data-target="cu-input-2" data-target-select="cu-select-2" />
+            </div>
+            <div class="">
+                <select id="cu-select-1" class="js-cu-units form-control" data-input="cu-input-1" onchange="changeUnit(event)"></select>
+            </div>
+          </div>
+          <div class="" style="padding-top:30px;">
+            <div class="">
+              <input type="text" id="cu-input-2" class="form-control" value="1" oninput="changeAmount(event)" data-unit="cu-select-2" data-target="cu-input-1" data-target-select="cu-select-1" />
+            </div>
+            <div class="">  
+                <select id="cu-select-2" class="js-cu-units form-control" data-input="cu-input-2" onchange="changeUnit(event)"></select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Temp Conversion -->
+    <div class="">
+    <div class="temp-converter">
+      <p>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+      </p>
+      <br>
+      <div class="">
+      <p class="temp-output">Celsius: <span id="outputCelsius"></span></p>
+      </div>
+    </div>
+    <div class="temp-converter">
+      <p>
+        <input id="inputCelsius" type="number" placeholder="Celsius"
+        oninput="temperatureConverter2(this.value)"
+        onchange="temperatureConverter2(this.value)">
+      </p>
+      <div class="temp-converter">
+      <p class="temp-output">Fahrenheit: <span id="outputFahrenheit"></span></p>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="tool-spacing"></div>
+
+
+
+<div class="shopping-list">
+    <h1 class="tools-title"><strong>Shopping List</strong></h1>
+  <!-- Form to add items -->
+  
+  <form>
+      <input type="text" class="todo-input">
+      <button class="todo-button" type="submit">
+          <i class="fas fa-plus-circle"></i>
+      </button>
+  </form>
+  <!-- JS file appends input to the DOM-->
+  <div class="todo-container">
+      <ul class="todo-list">
+          <div class="todo">
+          </div>
+      </ul>
+  </div>
+</div>
+
+
+
+
+<div class="tool-spacing"></div>
+
+  <h1 class="tools-title timer-title">Oven Timer</h1>
+  <div class="shrink">
+  <div id="container">
+      <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
+      <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+      <button id="start" class="btn timer-btn"><h6 class="timer-btn">Start</h6></button>
+      <button id="reset" class="btn timer-btn"><h6 class="timer-btn">Reset</h6></button>
+  </div>
+</div>
+
+
+
+
+
+    <!-- JS for conversions -->
+    <script src="js/cookingtools.js"></script>
+  </body>
+</html>

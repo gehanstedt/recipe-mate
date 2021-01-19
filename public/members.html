@@ -9,13 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
         <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-        <link rel="stylesheet" href="../public/stylesheets/members.css"> 
-        </head>
+        <link rel="stylesheet" href="stylesheets/members.css"> 
+    </head>
     <body oncontextmenu='return false' class='snippet-body'>
-
-
+        <!-- Navbar -->
         <nav class="navbar navbar-default navigation-clean headerContainer">
             <div class="container ">
                 <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link" href="homepage.html">recipe-mate</a>
@@ -24,22 +25,28 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li role="presentation"><a href="">Home</a></li>
-                        <li role="presentation"><a href="">Find Recipes</a></li>
-                        <li role="presentation"><a href="">Favorites </a></li>
-                        <li role="presentation"><a href="">Tools </a></li>
-                        <li role="presentation"><a href="">Contact </a></li>
-                        <li role="presentation"><a href="">Log Out</a></li>
+                        <li role="presentation"><a href="#search-bar">Find Recipes</a></li>
+                        <li role="presentation"><a href="/api/favorite/1">Favorites </a></li>
+                        <li role="presentation"><a href="cookingtools.html">Tools </a></li>
+                        <li role="presentation"><a href="contact.html">Contact </a></li>
+                        <li role="presentation"><a href="/logout">Log Out</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<!-- Search Bar -->
+                <!-- Search title -->
+        <h1 class="card-title">Search Here:</h1>
+        <!-- Search Bar -->
         <div class="container h-100">
             <div class="d-flex justify-content-center h-100">
-                <div class="search"> <input class="search_input" type="text" name="" placeholder="Search here..."> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
+                <div class="search" id="search-bar"> 
+                    <input class="search_input" type="text" name="searchRecipe" placeholder="Search here..."> 
+                    <a href="#" class="search_icon"><i class="fa fa-search"></i></a> 
+                </div>
             </div>
         </div>
+
 <!--
 <div class="container h-100">
     <div class="d-flex justify-content-center h-100">
@@ -47,7 +54,6 @@
     </div>
 </div>
 -->
-
 
 <!-- Large card, need to test with API -->
 <!--  
@@ -71,61 +77,58 @@
 </div>
 -->
 
-
-
-
-
-<div class="container mt-100">
-    <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
-                    <div class="inner">
-                        <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div>
+        <!-- Search Results -->
+        <div class="container mt-100 card-results">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
+                            <div class="inner">
+                                <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Milk Steak</h4>
+                            <p class="text-muted">Served with Raw Jelly Beans</p>
+                            <h4 class="star-title">Star rating </h4>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                        </div>
                     </div>
-                </a>
-                <div class="card-body text-center">
-                    <h4 class="card-title">Milk Steak</h4>
-                    <p class="text-muted">Served with Raw Jelly Beans</p>
-                    <h4 class="star-title">Star rating </h4>
-                    <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
+                            <div class="inner">
+                                <div class="main-img"><img src="https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/04/spaghetti-policy.jpg" alt="Category"></div>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Pocket Spaghetti</h4>
+                            <p class="text-muted">What's your spaghetti policy?</p>
+                            <h4 class="star-title">Star rating </h4>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                        </div>
                     </div>
-                    <a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
+                            <div class="inner">
+                                <div class="main-img"><img src="https://www.itsalways.com/wp-content/uploads/2017/06/Frank-Rum-Ham.jpg" alt="Category"></div>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Rum Ham</h4>
+                            <p class="text-muted">This is ham soaked in rum, it's loaded with booze</p>
+                            <h4 class="star-title">Star rating </h4>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
-                    <div class="inner">
-                        <div class="main-img"><img src="https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/04/spaghetti-policy.jpg" alt="Category"></div>
-                    </div>
-                </a>
-                <div class="card-body text-center">
-                    <h4 class="card-title">Pocket Spaghetti</h4>
-                    <p class="text-muted">What's your spaghetti policy?</p>
-                    <h4 class="star-title">Star rating </h4>
-                    <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                    <a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
-                    <div class="inner">
-                        <div class="main-img"><img src="https://www.itsalways.com/wp-content/uploads/2017/06/Frank-Rum-Ham.jpg" alt="Category"></div>
-                    </div>
-                </a>
-                <div class="card-body text-center">
-                    <h4 class="card-title">Rum Ham</h4>
-                    <p class="text-muted">This is ham soaked in rum, it's loaded with booze</p>
-                    <h4 class="star-title">Star rating </h4>
-                    <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
+        <script type="text/javascript" src="js/members.js"></script>
+    </body>
 </html>
