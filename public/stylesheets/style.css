@@ -94,11 +94,6 @@ color: white;
 }
 
 .features-clean {
-  color:#313437;
-  padding-bottom:30px;
-}
-
-.features-clean p {
   color:#000;
 }
 
@@ -106,7 +101,6 @@ color: white;
   font-size:20px;
   font-weight:bold;
   margin-top:0;
-  margin-bottom:20px;
   color:inherit;
 }
 
@@ -716,7 +710,7 @@ color: white;
 .features-clean .intro {
     font-size:16px;
     max-width:500px;
-    margin:0 auto 60px;
+    margin:0 auto 10px;
   }
 
 .features-clean h2 {
