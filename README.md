@@ -6,7 +6,8 @@ Recipe-Mate
 
 
 Webpage
-link to website: 
+link to website: https://github.com/gehanstedt/recipe-mate
+Link to Heroku: 
 
 
 Project description
@@ -14,11 +15,8 @@ Project description
 
 
 
-
 Write user story for the date-night project
 A user enters food items currently in their cabinet and is provided with recipes to create their meal
-
-
 
 
 
@@ -29,7 +27,31 @@ SCREENSHOTS
 ![landingimage](https://user-images.githubusercontent.com/71415601/105096699-7b39ef80-5a75-11eb-95fc-4d0b12c0ceed.png)
 
 
+![background](https://user-images.githubusercontent.com/71415601/105100258-079ae100-5a7b-11eb-8b4e-f5d1ca142237.jpg)
 
+
+  
+	
+
+•	Features and Technology
+•	HTML
+•	CSS
+•	JavaScript 
+•	Edamam API
+•	Handlbars
+•	Sequalize
+•	MySQL
+
+
+ Contributors:
+
+•	Greg
+•	Donna
+•	Denise 
+•	Rich
+•	Dexter
+•	Jerron
+•	Sean
 
 
 
