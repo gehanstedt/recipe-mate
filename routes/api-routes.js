@@ -142,6 +142,17 @@ module.exports = function(app) {
     });
   });
 
+  app.post("/api/favorite/:id", function(req, res) {
+    console.log (`Favorite ID passed in for deletion:  -->${req.params.id}<--`);
+    db.Favorite_recipe.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbPost) {
+        res.json(dbPost);
+    });
+  });
+
 
 
 
