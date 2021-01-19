@@ -1,0 +1,7 @@
+"id";"user_id";"title";"url";"image_url";"rating";"createdAt";"updatedAt"
+1;1;"Recipe Title";"http://myrecipeurl.com";"http://myimageurl.com";3;"2021-01-15 00:08:44";"2021-01-15 00:32:01"
+2;1;"Recipe Title 2";"http://myrecipeurl2.com";"http://myimageurl2.com";2;"2021-01-15 00:09:16";"2021-01-15 00:09:16"
+3;1;"Recipe Title 3";"http://myrecipeurl3.com";"http://myimageurl3.com";5;"2021-01-15 00:30:24";"2021-01-15 00:30:24"
+4;2;"Recipe Title User 2";"http://myrecipeurluser2.com";"http://myimageurl2.com";5;"2021-01-15 01:02:43";"2021-01-15 01:03:53"
+5;3;"Recipe Title User 3";"http://myrecipeurluser3.com";"http://myimageurl3.com";2;"2021-01-15 01:13:36";"2021-01-15 01:14:29"
+6;4;"Recipe Title User 4";"http://myrecipeurluser4.com";"http://myimageurl4.com";4;"2021-01-15 22:32:32";"2021-01-15 22:33:49"
