@@ -22,12 +22,13 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
 						<div class="inner">
-							<div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div>
+							{{!-- <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div> --}}
+							<div class="main-img"><img src="{{this.image_url}}" alt="Category"></div>
 						</div>
 					</a>
 					<div class="card-body text-center">
 						<h4 class="card-title">{{this.title}}</h4>
-						<p class="text-muted">Served with Raw Jelly Beans</p>
+						{{!-- <p class="text-muted">Served with Raw Jelly Beans</p> --}}
 						<h4 class="star-title">Star rating </h4>
 						<div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
 						</div>
