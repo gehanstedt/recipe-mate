@@ -1,14 +1,13 @@
-
 .landing-page{
-background-image:url('../img/background.jpg');
-/* Set a specific height */
-height: 650px;
-/* Parallax Effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-color: #ffdfdf;
+  background-image:url('../img/background.jpg');
+  /* Set a specific height */
+  height: 650px;
+  /* Parallax Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffdfdf;
 }
 
 .landingtext{
@@ -16,6 +15,7 @@ color: #ffdfdf;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px black;
 }
 
 .logintext, .signuptext {
@@ -94,11 +94,6 @@ color: white;
 }
 
 .features-clean {
-  color:#313437;
-  padding-bottom:30px;
-}
-
-.features-clean p {
   color:#000;
 }
 
@@ -106,7 +101,6 @@ color: white;
   font-size:20px;
   font-weight:bold;
   margin-top:0;
-  margin-bottom:20px;
   color:inherit;
 }
 
@@ -716,7 +710,7 @@ color: white;
 .features-clean .intro {
     font-size:16px;
     max-width:500px;
-    margin:0 auto 60px;
+    margin:0 auto 10px;
   }
 
 .features-clean h2 {
@@ -1140,6 +1134,7 @@ section.testimonials {
 #myFooter {
   background-color: #373a48;
   color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #myFooter .footer-copyright{
