@@ -40,23 +40,36 @@ SCREENSHOTS
 	
 
 •	Features and Technology
+
 •	HTML
+
 •	CSS
+
 •	JavaScript 
+
 •	Edamam API
+
 •	Handlbars
+
 •	Sequalize
+
 •	MySQL
 
 
  Contributors:
 
 •	Greg
+
 •	Donna
+
 •	Denise 
+
 •	Rich
+
 •	Dexter
+
 •	Jerron
+
 •	Sean
 
 
