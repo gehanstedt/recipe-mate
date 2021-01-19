@@ -34,13 +34,7 @@ SCREENSHOTS
 
 
 
-•	Features and Technology
-•	HTML
-•	JavaScript
-•	Unsplash
-•	Google Fonts
-•	Sequelize
-•	Handlebars
-•	Edamam
-•	Spoontactular
+
+
+
 
