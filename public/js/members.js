@@ -27,7 +27,9 @@ $(document).ready(function() {
   // console.log("HERE")
   $.post("/api/recipe", ingredients) 
   .done(function(result) {
-    console.log(result)
+    console.log(result);
+    // Empty any previous results
+    $('#search-results').empty ();
     
     for(var i=0; i < 10; i++){
       // $('#search-results').html(result[i].recipe.image);
