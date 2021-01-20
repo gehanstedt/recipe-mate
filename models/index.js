@@ -14,8 +14,10 @@ if (config.use_env_variable) {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+
 console.log ('----------');
-console.log (`sequelize:  ${sequelize}`);
+console.log (`process.env[config.use_env_variable]:  ${process.env[config.use_env_variable]}`);
+console.log (`process.env: ${process.env}`);
 console.log ('----------');
 
 fs
