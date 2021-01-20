@@ -3,6 +3,8 @@
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="img/favicon.ico" rel="icon">
+
         <title> Recipe Mate</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -35,25 +37,47 @@
             </div>
         </nav>
 
+
                 <!-- Search title -->
-        <h1 class="card-title">Search Here:</h1>
+        
+
+                <div class="row">
+                    <div class="col-sm-12">
+        <div class="text-center move">            
+                 <br>
+             <h1> Search Here:</h1>
+           <input type="text" id="search-text" name="search" id="searchTerm" placeholder="Search..">
+              </input>
+           <button id='search-bar' type="submit" class="btn btn-default" id = "search">Submit</button>
+                
+             <hr>
+           <ul class='text-center container' id = 'results'></ul>
+             </div>
+           </div>
+           </div>
+
+           
+
+           
+
         <!-- Search Bar -->
-        <div class="container h-100">
+        <!-- <div class="container h-100">
             <div class="d-flex justify-content-center h-100">
+                <input class="search_input" type="text" name="searchRecipe" placeholder="Search here..."> 
                 <div class="search" id="search-bar"> 
-                    <input class="search_input" type="text" name="searchRecipe" placeholder="Search here..."> 
+                    
                     <a href="#" class="search_icon"><i class="fa fa-search"></i></a> 
                 </div>
             </div>
-        </div>
+        </div> -->
 
-<!--
-<div class="container h-100">
+
+<!-- <div class="container h-100">
     <div class="d-flex justify-content-center h-100">
         <div class="search"> <input class="search_input" type="text" name="" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
     </div>
-</div>
--->
+</div> -->
+
 
 <!-- Large card, need to test with API -->
 <!--  
@@ -79,24 +103,11 @@
 
         <!-- Search Results -->
         <div class="container mt-100 card-results">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
-                            <div class="inner">
-                                <div class="main-img"><img src="https://i.pinimg.com/originals/46/d5/db/46d5dbf9d6b5db6fffd9449cb2427d44.jpg" alt="Category"></div>
-                            </div>
-                        </a>
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Milk Steak</h4>
-                            <p class="text-muted">Served with Raw Jelly Beans</p>
-                            <h4 class="star-title">Star rating </h4>
-                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                            </div>
-                            <a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
+            <div class="row" id="search-results">
+                
+
+
+                <!-- <div class="col-md-4 col-sm-6">
                     <div class="card mb-30 search-results"><a class="card-img-tiles" href="#" data-abc="true">
                             <div class="inner">
                                 <div class="main-img"><img src="https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/04/spaghetti-policy.jpg" alt="Category"></div>
@@ -126,7 +137,7 @@
                             </div><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">Favorite</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <script type="text/javascript" src="js/members.js"></script>
