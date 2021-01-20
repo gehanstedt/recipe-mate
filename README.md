@@ -5,10 +5,12 @@
 * [Description](#description)
 * [Links](#links)
 * [UserStory](#user-story)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Application](#application)
-* [Credits](#credits)
+* [Wireframe](#wireframe)
+* [Screenshots ](#screenshots)
+* [API's](#api)
+* [Technology](#technology)
+* [Contributors](#contributors)
+
 
 
 ## Description 
@@ -36,11 +38,8 @@
 
   
 ## API's used 
-- Edamam API
-
-
+- Edamam 
 ## Technology 
-
 *  dotenv
 *  oenv
 *  Heroku
@@ -54,9 +53,7 @@
 *  Pexels
 *  Sequelize
 
-
- ## Roles
-
+ ## Contributors 
  - Denise (April) 
  - Dexter (Michelangelo)
  - Donna (Donatello) 
@@ -64,6 +61,9 @@
  - Jerron (Master Splinter)
  - Rich (Leonardo)
  - Sean (Raphael)
+
+
+ 
 
 
 
