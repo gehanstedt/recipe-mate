@@ -42,9 +42,6 @@ $(document).ready(function() {
           '</a>'+
           '<div class="card-body text-center">'+        
               `<h4 class="card-title"><a href="${result[i].recipe.url}" target="_blank">${result[i].recipe.label}</a></h4>`+
-              `<h4 class="star-title">Star rating </h4>`+
-              `<div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>`+
-              `</div>`+
               `<a class="favorite-recipe-button btn btn-outline-primary btn-sm" href="#" data-abc="true" user-id="${userID}" title="${result[i].recipe.label}" url="${result[i].recipe.url}" image-url="${result[i].recipe.image}">Favorite</a>`+
           `</div>`+
       `</div>`+
