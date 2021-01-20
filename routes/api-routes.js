@@ -73,9 +73,9 @@ module.exports = function(app) {
       image_url: req.body.image_url,
       rating: req.body.rating,
     })
-      .then(function() {
-        // This code below needs to be replaced wiht maybe just a thing back saying "success".
-        res.redirect(307, "/api/login");
+      .then(function(dbPost) {
+        // Return success status code if successfully added to database.
+        res.json(dbPost);
       })
       .catch(function(err) {
         res.status(401).json(err);
