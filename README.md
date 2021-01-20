@@ -1,4 +1,4 @@
-# recipe-mate
+# Recipe-mate
 
 # Project Title
 
@@ -27,19 +27,18 @@
 ## Screenshots: 
 ![Project 2 wire chart ](https://user-images.githubusercontent.com/71415601/105096058-8b9d9a80-5a74-11eb-8a9a-30a84e5e44e1.png)
 
-
 ![Capture2](https://user-images.githubusercontent.com/71415601/105106777-87797900-5a84-11eb-8f30-5be0ff19c20e.JPG)
-
 
 ![Capture3](https://user-images.githubusercontent.com/71415601/105106814-a546de00-5a84-11eb-95df-48a15cc53091.JPG)
 
 ![Capture4](https://user-images.githubusercontent.com/71415601/105107120-58173c00-5a85-11eb-9a98-18b1c37a6d96.JPG)
 
+![Capture5](https://user-images.githubusercontent.com/71415601/105196312-7d4d8e00-5b09-11eb-89c6-b7e170322ceb.JPG)
+
   
-## API's to be used: 
+## API's used: 
 
-
-•	Edamam API
+- Edamam API
 
 
 ## Table of Contents
@@ -68,7 +67,6 @@
 - Passport
 - Pexels
 - Google Fonts 
-
 
 
 
