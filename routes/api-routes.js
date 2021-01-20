@@ -2,13 +2,12 @@
 var db = require("../models");
 var passport = require("../config/passport");
 var request = require("request");
-
-
+require("dotenv").config()
 
 //
 // We need to hide the API key
 // 
-const apiURL = "https://api.edamam.com/search?&app_id=424a8caa&app_key=8a5f2c782654123ddad8e6b7d7073ef1&q="
+const apiURL = "https://api.edamam.com/search?&app_id=" + process.env.apiID + "&app_key=" + process.env.apiKey +"&q="
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -101,24 +100,6 @@ module.exports = function(app) {
         res.json(dbPost);
     });
   });
-
-  // GET route to return all favorites for a given user
-  // Parameters:
-  //    user_id - ID of the user - from the body
-  // Returns:
-  //     JSON object (dbPost)
-/*
-  app.get("/api/favorite", function(req, res) {
-    console.log (req.body.user_id);
-    db.Favorite_recipe.findAll({
-      where: {
-        user_id: req.body.user_id
-      }
-    }).then(function(dbPost) {
-      res.json(dbPost);
-    });
-  });
-*/
 
   app.get("/api/favorite/:id", function(req, res) {
     console.log (`User ID passed in:  -->${req.params.id}<--`);
