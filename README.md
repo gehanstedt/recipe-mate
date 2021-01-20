@@ -7,7 +7,7 @@
 * [UserStory](#user-story)
 * [Wireframe](#wireframe)
 * [Screenshots ](#screenshots)
-* [API's](#api)
+* [API](#api)
 * [Technology](#technology)
 * [Contributors](#contributors)
 
@@ -18,7 +18,7 @@
  
 ## Links 
 - https://github.com/gehanstedt/recipe-mate
--  put heroku link here 
+- https://boiling-cliffs-99556.herokuapp.com/
 
 ## User story 
 - A user enters food items currently in their cabinet and is provided with recipes to create their meal
@@ -37,7 +37,7 @@
 ![Capture5](https://user-images.githubusercontent.com/71415601/105196312-7d4d8e00-5b09-11eb-89c6-b7e170322ceb.JPG)
 
   
-## API's used 
+## API 
 - Edamam 
 ## Technology 
 *  dotenv
