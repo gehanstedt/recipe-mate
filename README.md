@@ -1,11 +1,9 @@
-# Recipe-mate
+## **Recipe-mate** 
 
 # Project Title
 
 
 - Recipe Mate - a perfect cook's companion to store some favorite recipes.  This is part of Project #2 of the Georgia Tech Coding Bootcamp.
-
-
 
 
 ## Link to website: https://github.com/gehanstedt/recipe-mate
@@ -23,9 +21,9 @@
 - A user enters food items currently in their cabinet and is provided with recipes to create their meal
 
 
-
-## Screenshots: 
+## **Wireframe or Sketch** 
 ![Project 2 wire chart ](https://user-images.githubusercontent.com/71415601/105096058-8b9d9a80-5a74-11eb-8a9a-30a84e5e44e1.png)
+## Screenshots: 
 
 ![Capture2](https://user-images.githubusercontent.com/71415601/105106777-87797900-5a84-11eb-8f30-5be0ff19c20e.JPG)
 
