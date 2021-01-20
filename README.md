@@ -58,44 +58,28 @@ A user enters food items currently in their cabinet and is provided with recipes
 
 ## Features and Technology: 
 
-•	HTML/ CSS/ Bootstrap
-
-•	Heroku
-
-•	JavaScript 
-
-•	Edamam API
-
-•	Handlbars
-
-•	Sequalize
-
-•	MySQL
-
-•	Passport
-
-•	Pexels
-
-•	Google Fonts 
+- HTML/ CSS/ Bootstrap
+- Heroku
+- JavaScript 
+- Edamam API
+- Handlbars
+- Sequalize
+- MySQL
+- Passport
+- Pexels
+- Google Fonts 
 
 
 
 
  ## Contributors:
 
-•	Greg
-
-•	Donna
-
-•	Denise 
-
-•	Rich
-
-•	Dexter
-
-•	Jerron
-
-•	Sean
+ - Dexter (Michelangelo)
+ - Donna (Donatello) 
+ - Greg (GDog)
+ - Jerron (Master Splinter)
+ - Rich (Leonardo)
+ - Sean (Raphael)
 
 
 
