@@ -1,28 +1,30 @@
-## Recipe-mate 
+# recipe-mate 
 
-## Project Title:
-## Recipe Mate 
-- a perfect cook's companion to store some favorite recipes.  
+## Table of Contents
+
+* [Description](#description)
+* [Links](#links)
+* [UserStory](#user-story)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Application](#application)
+* [Credits](#credits)
 
 
-## Link to website: 
-- https://github.com/gehanstedt/recipe-mate
-
-## Link to Heroku: 
-
-
-## Project description:
+## Description 
 - Recipe Mate is a simple web tool that is a personal assistant that uses external API to recommend recipes based on the food items presented in the search on a single page.
+ 
+## Links 
+- https://github.com/gehanstedt/recipe-mate
+-  put heroku link here 
 
-
-
-## Write user story for the recipe-mate  project
+## User story 
 - A user enters food items currently in their cabinet and is provided with recipes to create their meal
 
 
-## **Wireframe or Sketch** 
+## Wireframe 
 ![Project 2 wire chart ](https://user-images.githubusercontent.com/71415601/105096058-8b9d9a80-5a74-11eb-8a9a-30a84e5e44e1.png)
-## Screenshots: 
+## Screenshots 
 
 ![Capture2](https://user-images.githubusercontent.com/71415601/105106777-87797900-5a84-11eb-8f30-5be0ff19c20e.JPG)
 
@@ -33,42 +35,29 @@
 ![Capture5](https://user-images.githubusercontent.com/71415601/105196312-7d4d8e00-5b09-11eb-89c6-b7e170322ceb.JPG)
 
   
-## API's used: 
-
+## API's used 
 - Edamam API
 
 
-## Table of Contents
+## Technology 
 
-* [Description](#description)
-
-* [Installation](#installation)
-
-* [Usage](#usage)
-
-* [Application](#application)
-
-* [Credits](#credits)
-
-
-
-## Features and Technology: 
-
-- HTML/ CSS/ Bootstrap
-- Heroku
-- JavaScript 
-- Edamam API
-- Handlbars
-- Sequalize
-- MySQL
-- Passport
-- Pexels
-- Google Fonts 
+*  dotenv
+*  oenv
+*  Heroku
+*  HTML/CSS/ Bootstrap
+*  Google Fonts
+*  Edamam
+*  Handlebars
+*  JavaScript
+*  MySQL
+*  Passport
+*  Pexels
+*  Sequelize
 
 
+ ## Roles
 
- ## Contributors:
-
+ - Denise (April) 
  - Dexter (Michelangelo)
  - Donna (Donatello) 
  - Greg (GDog)
