@@ -18,6 +18,7 @@ if (config.use_env_variable) {
 console.log ('----------');
 console.log (`process.env[config.use_env_variable]:  ${process.env[config.use_env_variable]}`);
 console.log (`process.env: ${process.env}`);
+console.log (`env: ${env}`);
 console.log ('----------');
 
 fs
