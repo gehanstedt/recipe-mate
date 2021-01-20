@@ -37,7 +37,10 @@ SCREENSHOTS
 ![Capture4](https://user-images.githubusercontent.com/71415601/105107120-58173c00-5a85-11eb-9a98-18b1c37a6d96.JPG)
 
   
-	
+API's to be used
+•	Edamam API
+
+
 
 •	Features and Technology
 
