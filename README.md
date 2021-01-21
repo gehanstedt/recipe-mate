@@ -52,7 +52,7 @@
 - Edamam 
 ## Technology 
 *  dotenv
-*  oenv
+*  env
 *  Heroku
 *  HTML/CSS/ Bootstrap
 *  Google Fonts
