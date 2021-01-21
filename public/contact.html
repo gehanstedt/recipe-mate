@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title> Recipe Mate</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-        <link rel="stylesheet" href="stylesheets/members.css"> 
-        </head>
-    <body oncontextmenu='return false' class='snippet-body'>
-        <!-- Navbar -->
-        <nav class="navbar navbar-default navigation-clean headerContainer">
-            <div class="container ">
-                <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link" href="homepage.html">recipe-mate</a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation"><a href="members.html">Home</a></li>
-                        <li role="presentation"><a href="members.html">Find Recipes</a></li>
-                        <li role="presentation"><a href="/api/favorite/1" id="favorite-link">Favorites </a></li>
-                        <li role="presentation"><a href="cookingtools.html">Tools </a></li>
-                        <li role="presentation"><a href="contact.html">Contact </a></li>
-                        <li role="presentation"><a href="/logout">Log Out</a></li>
-                    </ul>
-                </div>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title> Recipe Mate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
+    </script>
+    <link rel="stylesheet" href="stylesheets/members.css">
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navigation-clean headerContainer">
+        <div class="container ">
+            <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link"
+                    href="homepage.html">recipe-mate</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
-        </nav>
-       
-        <h1 class="card-title">Contact Us</h1>
-        <div class="container contact-form">
-            <form action="action_page.php">
-          
-              <label for="name"> Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name">
-          
-              <label for="emailadd">Email</label>
-              <input type="text" id="emailadd" name="emailadd" placeholder="Enter your Email address">
-          
-              <label for="subjectline">Subject Line</label>
-              <input type="text" id="subjectline" name="subjectline" placeholder="Enter the Subject">
-          
-              <label for="subject">Message</label>
-              <textarea id="message" name="message" placeholder="Enter your message here" style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div>
-          <script type="text/javascript" src="js/members.js"></script>
-    </body>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="members.html">Home</a></li>
+                    <li role="presentation"><a href="members.html">Find Recipes</a></li>
+                    <li role="presentation"><a href="/api/favorite/1" id="favorite-link">Favorites </a></li>
+                    <li role="presentation"><a href="cookingtools.html">Tools </a></li>
+                    <li role="presentation"><a href="contact.html">Contact </a></li>
+                    <li role="presentation"><a href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="card-title">Contact Us</h1>
+    <div class="container contact-form">
+        <form action="action_page.php">
+
+            <label for="name"> Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="emailadd">Email</label>
+            <input type="text" id="emailadd" name="emailadd" placeholder="Enter your Email address">
+
+            <label for="subjectline">Subject Line</label>
+            <input type="text" id="subjectline" name="subjectline" placeholder="Enter the Subject">
+
+            <label for="subject">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message here" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <script type="text/javascript" src="js/members.js"></script>
+</body>
+
 </html>

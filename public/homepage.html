@@ -1,117 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>recipe-mate</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="stylesheets/style.css"rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <div>
-            <nav class="navbar navbar-default navigation-clean headerContainer">
-                <div class="container ">
-                    <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link" href="homepage.html">recipe-mate</a>
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation"><a  href="#howitworks">HOW IT WORKS</a></li>
-                            <li role="presentation"><a id="signupBtn" href="#login">LOG IN</a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe-mate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar navbar-default navigation-clean headerContainer">
+            <div class="container ">
+                <div class="navbar-header"><a id="logo" class="navbar-brand navbar-link"
+                        href="homepage.html">recipe-mate</a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                            class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
-            </nav>
-        </div>
-        <!-- Landing Page -->
-        <div class=landing-page>
-            <h1 class="landingtext">The only cookbook you'll ever need</h1>  
-            <img src="img/landingimage.png" alt="Woman cooking" width="920" class="img-responsive landing-img">
-                <div class="jumbotron hero">
-                    <div class="container"></div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="#howitworks">HOW IT WORKS</a></li>
+                        <li role="presentation"><a id="signupBtn" href="#login">LOG IN</a></li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Landing Page -->
+    <div class=landing-page>
+        <h1 class="landingtext">The only cookbook you'll ever need</h1>
+        <img src="img/landingimage.png" alt="Woman cooking" width="920" class="img-responsive landing-img">
+        <div class="jumbotron hero">
+            <div class="container"></div>
         </div>
-        <!-- How It Works Section -->
-        <div class="features-clean ">
+    </div>
+    <!-- How It Works Section -->
+    <div class="features-clean ">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" id="howitworks">How It Works</h2>
+            </div>
+            <div class="row features">
+                <div class="col-md-4 col-sm-6 item">
+                    <i class="glyphicon glyphicon-user ontop"></i>
+                    <h3 class="name">Sign-Up</h3>
+                    <p class="description">Create a user account</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-search ontop"></i>
+                    <h3 class="name">Search For Recipes</h3>
+                    <p class="description">Search for new recipes using key ingridents from your kitchen and save your
+                        favorites</p>
+                </div>
+                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-wrench ontop"></i>
+                    <h3 class="name">Use Cooking Tools</h3>
+                    <p class="description">Use our Shopping List, Oven Timer, and Measurement & Temperature converters
+                        to for making meal time a breeze</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explained -->
+    <div id="howItWorks" class="features-clean">
+        <div class="col-md-6"></div>
+    </div>
+    <!-- Landing page background image -->
+    <div class=landing-page>
+        <!-- Login/Sign Up -->
+        <div id="login" class="login-reg-panel">
+            <div class="login-info-box">
+                <h2>Have an account?</h2>
+                <p>Log in to your account</p>
+                <label id="label-register" for="log-reg-show">Login</label>
+                <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+            </div>
+            <div class="register-info-box">
+                <h2>Don't have an account?</h2>
+                <p>Sign up for one here</p>
+                <label id="label-login" for="log-login-show">Register</label>
+                <input type="radio" name="active-log-panel" id="log-login-show">
+            </div>
+            <div class="white-panel">
+                <div class="login-show">
+                    <h2>LOGIN</h2>
+                    <input type="text" placeholder="Email" id="email-login-input">
+                    <input type="password" placeholder="Password" id="password-login-input">
+                    <input type="button" value="Login" id="login-button">
+                </div>
+                <div class="register-show">
+                    <h2>REGISTER</h2>
+                    <input type="text" id="name-input" placeholder="Full Name">
+                    <input type="text" id="email-input" placeholder="Email">
+                    <input type="password" id="password-input" placeholder="Password">
+                    <input type="password" id="password-input2" placeholder="Confirm Password">
+                    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span> <span class="msg"></span>
+                    </div>
+                    <input type="button" id="register-button" value="Register">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section explaining the project technology, and contributors -->
+    <footer id="myFooter">
+        <div class="footer-copyright">
             <div class="container">
-                <div class="intro">
-                    <h2 class="text-center" id="howitworks">How It Works</h2>
-                </div>
-                <div class="row features">
-                    <div class="col-md-4 col-sm-6 item">
-                        <i class="glyphicon glyphicon-user ontop"></i>
-                        <h3 class="name">Sign-Up</h3>
-                        <p class="description">Create a user account</p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-search ontop"></i>
-                        <h3 class="name">Search For Recipes</h3>
-                        <p class="description">Search for new recipes using key ingridents from your kitchen and save your favorites</p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-wrench ontop"></i>
-                        <h3 class="name">Use Cooking Tools</h3>
-                        <p class="description">Use our Shopping List, Oven Timer, and Measurement & Temperature converters to for making meal time a breeze</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Explained -->
-        <div id="howItWorks"class="features-clean">
-            <div class="col-md-6"></div>
-        </div>
-        <!-- Landing page background image -->
-        <div class=landing-page>  
-            <!-- Login/Sign Up -->
-            <div id="login" class="login-reg-panel">
-                <div class="login-info-box">
-                    <h2>Have an account?</h2>
-                    <p>Log in to your account</p>
-                    <label id="label-register" for="log-reg-show">Login</label>
-                    <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-                </div>                
-                <div class="register-info-box">
-                    <h2>Don't have an account?</h2>
-                    <p>Sign up for one here</p>
-                    <label id="label-login" for="log-login-show">Register</label>
-                    <input type="radio" name="active-log-panel" id="log-login-show">
-                </div>                
-                <div class="white-panel">
-                    <div class="login-show">
-                        <h2>LOGIN</h2>
-                        <input type="text" placeholder="Email" id="email-login-input">
-                        <input type="password" placeholder="Password" id="password-login-input">
-                        <input type="button" value="Login" id="login-button">
-                    </div>
-                    <div class="register-show">
-                        <h2>REGISTER</h2>
-                        <input type="text" id="name-input" placeholder="Full Name">
-                        <input type="text" id="email-input"  placeholder="Email">
-                        <input type="password" id="password-input" placeholder="Password">
-                        <input type="password" id="password-input2" placeholder="Confirm Password">
-                        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                            <span class="sr-only">Error:</span> <span class="msg"></span>
-                        </div>
-                        <input type="button" id="register-button" value="Register">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer section explaining the project technology, and contributors -->
-        <footer id= "myFooter">
-            <div class="footer-copyright">
-            <div class="container">        
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <h5>Project Information</h5>
-                        <a>This website will require the user to login to search for recipes based on ingredients currently in their cabinet.</a>
+                        <a>This website will require the user to login to search for recipes based on ingredients
+                            currently in their cabinet.</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <!-- Contributors -->
@@ -143,37 +151,37 @@
                 </div>
                 <p>Copyright G Dog Enterprises @ 2021</p>
             </div>
-            </div>
-        </footer>
-        <script type="text/javascript">
-            $(document).ready(function(){
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
             $('.login-info-box').fadeOut();
             $('.login-show').addClass('show-log-panel');
         });
-        $('.login-reg-panel input[type="radio"]').on('change', function() {
-            if($('#log-login-show').is(':checked')) {
-                $('.register-info-box').fadeOut(); 
+        $('.login-reg-panel input[type="radio"]').on('change', function () {
+            if ($('#log-login-show').is(':checked')) {
+                $('.register-info-box').fadeOut();
                 $('.login-info-box').fadeIn();
-                
+
                 $('.white-panel').addClass('right-log');
                 $('.register-show').addClass('show-log-panel');
                 $('.login-show').removeClass('show-log-panel');
-                
-            }
-            else if($('#log-reg-show').is(':checked')) {
+
+            } else if ($('#log-reg-show').is(':checked')) {
                 $('.register-info-box').fadeIn();
                 $('.login-info-box').fadeOut();
-                
+
                 $('.white-panel').removeClass('right-log');
-                
+
                 $('.login-show').addClass('show-log-panel');
                 $('.register-show').removeClass('show-log-panel');
             }
         });
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/signup.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
-    </body>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
 </html>
