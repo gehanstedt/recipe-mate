@@ -4,7 +4,7 @@
 
 * [Description](#description)
 * [Links](#links)
-* [UserStory](#user-story)
+* [User Story](#user-story)
 * [Wireframe](#wireframe)
 * [Screenshots ](#screenshots)
 * [API](#api)
@@ -20,7 +20,7 @@
 - https://github.com/gehanstedt/recipe-mate
 - https://boiling-cliffs-99556.herokuapp.com/
 
-## User story 
+## User Story 
 - A user enters food items currently in their cabinet and is provided with recipes to create their meal
 
 
