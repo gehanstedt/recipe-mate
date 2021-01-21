@@ -1,4 +1,4 @@
-# recipe-mate 
+# Recipe-Mate 
 
 ## Table of Contents
 
