@@ -14,14 +14,14 @@
 
 
 ## Description 
-- Recipe Mate is a simple web tool that is a personal assistant that uses external API to recommend recipes based on the food items presented in the search on a single page.
+Recipe Mate is a simple web tool that is a personal assistant that uses external API to recommend recipes based on the food items presented in the search on a single page.
  
 ## Links 
 - https://github.com/gehanstedt/recipe-mate
 - https://boiling-cliffs-99556.herokuapp.com/
 
 ## User Story 
-- A user enters food items currently in their cabinet and is provided with recipes to create their meal
+A user enters food items currently in their cabinet and is provided with recipes to create their meal
 
 
 ## Wireframe 
@@ -49,7 +49,7 @@
 
   
 ## API 
-- Edamam 
+Edamam 
 ## Technology 
 *  dotenv
 *  env
