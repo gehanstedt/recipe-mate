@@ -37,9 +37,9 @@
 
 ![Capture3](https://user-images.githubusercontent.com/71415601/105106814-a546de00-5a84-11eb-95df-48a15cc53091.JPG)
 
-[INSERT SEARCH PAGE HERE]
+![Search](https://user-images.githubusercontent.com/71415601/105255991-cf66d180-5b52-11eb-9c8e-210db23e2cb2.JPG)
 
-[INSERT FAVORITES PAGE HERE]
+![Favorites](https://user-images.githubusercontent.com/71415601/105255999-d1c92b80-5b52-11eb-8e91-1a336e0dbb7e.JPG)
 
 ![Capture2](https://user-images.githubusercontent.com/71415601/105106777-87797900-5a84-11eb-8f30-5be0ff19c20e.JPG)
 
